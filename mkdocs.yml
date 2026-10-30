@@ -1,0 +1,118 @@
+site_name: Mothership 1e - Regole
+site_description: Regole di Mothership First Edition (Player's Survival Guide, Warden's Operations Manual, Shipbreaker's Toolkit, Unconfirmed Contact Reports)
+
+theme:
+  name: material
+  features:
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.tooltips
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.path
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - toc.follow
+    - search.share
+    - header.autohide
+
+  language: it
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Passa alla modalità scura
+      primary: blue grey
+      accent: amber
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Passa alla modalità chiara
+      primary: blue grey
+      accent: amber
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: [includes]
+      auto_append: [glossary.md]
+  - abbr
+  - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+
+validation:
+  anchors: warn
+
+nav:
+- Home: index.md
+- Riferimento rapido: riferimento_rapido.md
+- Personaggio:
+  - Creazione del personaggio: 01_personaggio/creazione.md
+  - Skill: 01_personaggio/skill.md
+  - Armi e armature: 01_personaggio/armi_armature.md
+  - Equipaggiamento: 01_personaggio/equipaggiamento.md
+  - Trinket e Patch: 01_personaggio/trinket_patch.md
+- Regole base:
+  - Principi di gioco: 02_regole/principi.md
+  - Stat Check e Save: 02_regole/check_e_save.md
+  - Stress: 02_regole/stress.md
+  - Panic: 02_regole/panico.md
+- Violenza:
+  - Il round: 03_violenza/round.md
+  - Attacco e Damage: 03_violenza/attacco_danno.md
+  - Wounds e morte: 03_violenza/ferite_morte.md
+  - Range: 03_violenza/distanze.md
+- Sopravvivenza:
+  - Ambiente: 04_sopravvivenza/ambiente.md
+  - Cure mediche: 04_sopravvivenza/cure_mediche.md
+- Port e Contractor:
+  - Port e Shore Leave: 05_porti/porti_shore_leave.md
+  - Contractor: 05_porti/contractor.md
+- Warden:
+  - Preparare la prima sessione: 06_warden/preparazione.md
+  - L'Horror e il ciclo TOMBS: 06_warden/orrore.md
+  - Survive, Solve, Save: 06_warden/survive_solve_save.md
+  - Condurre il gioco: 06_warden/conduzione.md
+  - Regole della casa: 06_warden/regole_casa.md
+  - Incontri: 06_warden/incontri.md
+  - Costruire e gestire la campagna: 06_warden/campagna.md
+  - Area di partenza (Jump cluster): 06_warden/area_iniziale.md
+  - Fazioni: 06_warden/fazioni.md
+  - Economia della campagna: 06_warden/economia.md
+- Navi:
+  - Ship Manifest: 07_navi/manifest.md
+  - Statistiche della nave: 07_navi/statistiche.md
+  - Tipi di nave: 07_navi/tipi_di_nave.md
+  - Veicoli Class-0: 07_navi/veicoli_classe_0.md
+  - Upgrade: 07_navi/potenziamenti.md
+  - Armi delle navi: 07_navi/armi.md
+  - Viaggi spaziali: 07_navi/viaggi_spaziali.md
+  - Rilevamento e comunicazioni: 07_navi/rilevamento_comunicazioni.md
+  - Combattimento tra navi: 07_navi/combattimento.md
+  - Riparazioni e manutenzione: 07_navi/riparazioni.md
+  - Finanze della nave: 07_navi/finanze.md
+- Creature:
+  - Regole generali: 08_creature/regole.md
+  - Umanoidi e simulacri: 08_creature/umanoidi.md
+  - Mostri e predatori: 08_creature/mostri.md
+  - Infezioni e parassiti: 08_creature/infezioni.md
+  - Anomalie, luoghi e oggetti: 08_creature/anomalie.md
+  - Navi ed entità colossali: 08_creature/navi_colossi.md
+- Indice dei tag: tags.md
